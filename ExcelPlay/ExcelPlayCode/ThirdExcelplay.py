@@ -1,7 +1,8 @@
 '''
 Created on Jul 7, 2017
 
-@author: stata001c
+@author: Sailendra Tata
+This Python script will generate a html file based on the information provided on the excel sheet.
 '''
 
 import xlrd
