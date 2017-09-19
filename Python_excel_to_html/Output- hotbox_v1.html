@@ -1,0 +1,28 @@
+<h1>Table Name- HOTBOX</h1><h3>Subject area- Equipment</h3> 
+<p>This is a journal table and it holds the data for Hot Box Information, [Put all your information here]</p><h3>Contact&nbsp;information-</h3>                 <table style="height: 78px;" border="1" width="681">                <tbody> 
+<tr><td>SME</td> <td> sme_nm </td> <td>employeeid@comcast.com</td> </tr> 
+<tr><td>Architect</td> <td> architect_nm </td> <td>employeeid@comcast.com</td> </tr> 
+<tr><td>Owner</td> <td> owner_nm </td> <td>employeeid@comcast.com</td> </tr> 
+<tr><td>Dev manager</td> <td> dev_mgr </td> <td>employeeid@comcast.com</td> </tr> 
+</tbody> </table> 
+ <h3>&nbsp;</h3><h3>ETL Details-</h3><table style="height: 66px;" border="1" width="685"><tbody><tr>                <td><strong>Script name</strong></td><td><strong>Path</strong></td></tr> 
+<tr><td>[table_nm]_INI.btq</td>                <td>[Actual path of the script]</td></tr><tr><td>[table_name]_INC.btq</td>                <td>[Actual path of the script]</td></tr><tr><td>jrnl details</td>                <td>NA</td></tr><tr><td>test dtls</td>                <td>path test</td></tr></tbody></table> 
+ <h3>Load details-</h3><table style="height: 59px;" border="1" width="684"><tbody><tr>                <td><strong>Load Frequency</strong></td><td><strong>Object_Type</strong></td><td><strong>Environment</strong></td></tr> 
+<tr><td>daily load</td><td>View</td><td>MELD</td></tr> 
+<tr><td>daily load</td><td>Table</td><td>NDW</td></tr> 
+</tbody></table> 
+<h3>Metadata-</h3><table style="height: 192px;" border="1" width="528"><tbody><tr>                 <td><strong>Column Name</strong></td><td><strong>Data Type</strong></td>                <td><strong>Nullable</strong></td><td><strong>Definition</strong></td></tr> 
+<tr><td>CORP</td><td>INT</td><td>N</td><td>Two digit system number assigned to each corp.The corp # is unique only within one Tandem system. Valid Values:</td></tr> 
+<tr><td>HOUSE</td><td>CHAR(6)</td><td>N</td><td>House number. For Master Account or HostInfo, house number for a one-way host. Valid Values: Alpha-numeric. For HostInfo, can be blank for a two-way host device</td></tr> 
+<tr><td>CUST</td><td>CHAR(2)</td><td>N</td><td>Customer number. Valid Values:</td></tr> 
+<tr><td>BNUMB</td><td>CHAR(14)</td><td>N</td><td>Box serial number. Valid Values: Alpha/Numeric</td></tr> 
+<tr><td>PARTITION</td><td>CHAR(2)</td><td>N</td><td>Data hashing value for database management - equals the last 2 digits of the house #. Valid Values:</td></tr> 
+<tr><td>HOTBXDATE</td><td>TIMESTAMP</td><td>N</td><td>Date box is to go to the off-mask. Valid Values:</td></tr> 
+<tr><td>AUDIT_BATCH_ID</td><td>INT</td><td>N</td><td>A unique id generated for each ETL load</td></tr> 
+<tr><td>AUDIT_CREATED_BY_USER_ID</td><td>VARCHAR(30)</td><td>N</td><td>User name used for ETL processing</td></tr> 
+<tr><td>AUDIT_UPDATED_BY_USER_ID</td><td>VARCHAR(30)</td><td>N</td><td>User name used for ETL processing</td></tr> 
+<tr><td>AUDIT_INSERTED_TS</td><td>TIMESTAMP</td><td>N</td><td>Date and time when record is inserted</td></tr> 
+<tr><td>AUDIT_UPDATED_TS</td><td>TIMESTAMP</td><td>N</td><td>Date and time when record is updated</td></tr> 
+<tr><td>RECORD_START_TS</td><td>TIMESTAMP</td><td>N</td><td>Start time of the record on warehouse</td></tr> 
+<tr><td>RECORD_END_TS</td><td>TIMESTAMP</td><td>N</td><td>End time of the record on warehouse, always high end date will be used to indicate active record on warehouse</td></tr> 
+</tbody></table> 
