@@ -1,0 +1,138 @@
+DAY_ID is 2017-06-29, TGT_DIR is /sailendra/my_table/data,Source table name is my_table
+safe path directory exist on hdfs 
+Deleted /sailendra/my_table_trunc/data/my_table_trunc/day_id=2017-06-13
+Deleted /sailendra/my_table_trunc/data/my_table_trunc/day_id=2017-06-14
+Deleted /sailendra/my_table_trunc/data/my_table_trunc/day_id=2017-06-16
+Deleted /sailendra/my_table_trunc/data/my_table_trunc/day_id=2017-06-17
+Deleted /sailendra/my_table_trunc/data/my_table_trunc/day_id=2017-06-19
+Deleted /sailendra/my_table_trunc/data/my_table_trunc/day_id=2017-06-21
+Deleted /sailendra/my_table_trunc/data/my_table_trunc/day_id=2017-06-24
+Deleted /sailendra/my_table_trunc/data/my_table_trunc/day_id=2017-06-25
+Deleted /sailendra/my_table_trunc/data/my_table_trunc/day_id=2017-06-26
+************ STARTING PARTITIONS MOVE ON HDFS FOR TGT TABLE ************
+starting the process for 2017-06-29 - 0
+computed_date is 2017-06-29 -- / 
+starting hdfs process to remove TGT date for 2017-06-29
+We are about to move the TGT hdfs location, /sailendra/my_table/data/my_table/day_id=2017-06-29
+An error occurred while moving the partitions from TGT HDFS to safe path, /
+assuming partition was not available and proceeding with other partitions
+
+
+starting the process for 2017-06-29 - 1
+computed_date is 2017-06-28 -- / 
+starting hdfs process to remove TGT date for 2017-06-28
+We are about to move the TGT hdfs location, /sailendra/my_table/data/my_table/day_id=2017-06-28
+An error occurred while moving the partitions from TGT HDFS to safe path, /
+assuming partition was not available and proceeding with other partitions
+
+
+starting the process for 2017-06-29 - 2
+computed_date is 2017-06-27 -- / 
+starting hdfs process to remove TGT date for 2017-06-27
+We are about to move the TGT hdfs location, /sailendra/my_table/data/my_table/day_id=2017-06-27
+we have succefully moved the data from above partition to safe path hdfs location
+
+
+starting the process for 2017-06-29 - 3
+computed_date is 2017-06-26 -- / 
+starting hdfs process to remove TGT date for 2017-06-26
+We are about to move the TGT hdfs location, /sailendra/my_table/data/my_table/day_id=2017-06-26
+we have succefully moved the data from above partition to safe path hdfs location
+
+
+starting the process for 2017-06-29 - 4
+computed_date is 2017-06-25 -- / 
+starting hdfs process to remove TGT date for 2017-06-25
+We are about to move the TGT hdfs location, /sailendra/my_table/data/my_table/day_id=2017-06-25
+we have succefully moved the data from above partition to safe path hdfs location
+
+
+starting the process for 2017-06-29 - 5
+computed_date is 2017-06-24 -- / 
+starting hdfs process to remove TGT date for 2017-06-24
+We are about to move the TGT hdfs location, /sailendra/my_table/data/my_table/day_id=2017-06-24
+we have succefully moved the data from above partition to safe path hdfs location
+
+
+starting the process for 2017-06-29 - 6
+computed_date is 2017-06-23 -- / 
+starting hdfs process to remove TGT date for 2017-06-23
+We are about to move the TGT hdfs location, /sailendra/my_table/data/my_table/day_id=2017-06-23
+An error occurred while moving the partitions from TGT HDFS to safe path, /
+assuming partition was not available and proceeding with other partitions
+
+
+starting the process for 2017-06-29 - 7
+computed_date is 2017-06-22 -- / 
+starting hdfs process to remove TGT date for 2017-06-22
+We are about to move the TGT hdfs location, /sailendra/my_table/data/my_table/day_id=2017-06-22
+An error occurred while moving the partitions from TGT HDFS to safe path, /
+assuming partition was not available and proceeding with other partitions
+
+
+starting the process for 2017-06-29 - 8
+computed_date is 2017-06-21 -- / 
+starting hdfs process to remove TGT date for 2017-06-21
+We are about to move the TGT hdfs location, /sailendra/my_table/data/my_table/day_id=2017-06-21
+we have succefully moved the data from above partition to safe path hdfs location
+
+
+starting the process for 2017-06-29 - 9
+computed_date is 2017-06-20 -- / 
+starting hdfs process to remove TGT date for 2017-06-20
+We are about to move the TGT hdfs location, /sailendra/my_table/data/my_table/day_id=2017-06-20
+An error occurred while moving the partitions from TGT HDFS to safe path, /
+assuming partition was not available and proceeding with other partitions
+
+
+starting the process for 2017-06-29 - 10
+computed_date is 2017-06-19 -- / 
+starting hdfs process to remove TGT date for 2017-06-19
+We are about to move the TGT hdfs location, /sailendra/my_table/data/my_table/day_id=2017-06-19
+we have succefully moved the data from above partition to safe path hdfs location
+
+
+starting the process for 2017-06-29 - 11
+computed_date is 2017-06-18 -- / 
+starting hdfs process to remove TGT date for 2017-06-18
+We are about to move the TGT hdfs location, /sailendra/my_table/data/my_table/day_id=2017-06-18
+An error occurred while moving the partitions from TGT HDFS to safe path, /
+assuming partition was not available and proceeding with other partitions
+
+
+starting the process for 2017-06-29 - 12
+computed_date is 2017-06-17 -- / 
+starting hdfs process to remove TGT date for 2017-06-17
+We are about to move the TGT hdfs location, /sailendra/my_table/data/my_table/day_id=2017-06-17
+we have succefully moved the data from above partition to safe path hdfs location
+
+
+starting the process for 2017-06-29 - 13
+computed_date is 2017-06-16 -- / 
+starting hdfs process to remove TGT date for 2017-06-16
+We are about to move the TGT hdfs location, /sailendra/my_table/data/my_table/day_id=2017-06-16
+we have succefully moved the data from above partition to safe path hdfs location
+
+
+starting the process for 2017-06-29 - 14
+computed_date is 2017-06-15 -- / 
+starting hdfs process to remove TGT date for 2017-06-15
+We are about to move the TGT hdfs location, /sailendra/my_table/data/my_table/day_id=2017-06-15
+An error occurred while moving the partitions from TGT HDFS to safe path, /
+assuming partition was not available and proceeding with other partitions
+
+
+starting the process for 2017-06-29 - 15
+computed_date is 2017-06-14 -- / 
+starting hdfs process to remove TGT date for 2017-06-14
+We are about to move the TGT hdfs location, /sailendra/my_table/data/my_table/day_id=2017-06-14
+we have succefully moved the data from above partition to safe path hdfs location
+
+
+************ STARTING PARTITIONS VERIFICATION ON HDFS FOR TGT TABLE ************
+
+Everything appears good!!
+
+************ END - HDFS PARTITIONS VERIFICATION FOR TGT TABLE ************
+Repairing the TGT hive table to ensure all parititons information is upto date
+Partitions missing from filesystem:	my_table:day_id=2015-07-22	my_table:day_id=2015-07-28	my_table:day_id=2015-10-19	my_table:day_id=2015-10-20	my_table:day_id=2015-11-24	my_table:day_id=2015-11-26	my_table:day_id=2015-11-27	my_table:day_id=2015-11-28	my_table:day_id=2015-11-29	my_table:day_id=2015-11-30	my_table:day_id=2015-12-01	my_table:day_id=2015-12-02	my_table:day_id=2015-12-03	my_table:day_id=2015-12-04	my_table:day_id=2015-12-05	my_table:day_id=2015-12-06	my_table:day_id=2015-12-07	my_table:day_id=2015-12-08	my_table:day_id=2015-12-09	my_table:day_id=2015-12-10	my_table:day_id=2015-12-11	my_table:day_id=2015-12-12	my_table:day_id=2015-12-13	my_table:day_id=2015-12-14	my_table:day_id=2015-12-15	my_table:day_id=2015-12-16	my_table:day_id=2015-12-17	my_table:day_id=2015-12-18	my_table:day_id=2015-12-19	my_table:day_id=2015-12-20	my_table:day_id=2015-12-22	my_table:day_id=2015-12-23	my_table:day_id=2015-12-24	my_table:day_id=2015-12-25	my_table:day_id=2015-12-27	my_table:day_id=2015-12-28	my_table:day_id=2015-12-29	my_table:day_id=2015-12-30	my_table:day_id=2015-12-31	my_table:day_id=2016-01-01	my_table:day_id=2016-01-02	my_table:day_id=2016-01-03	my_table:day_id=2016-01-04	my_table:day_id=2016-01-06	my_table:day_id=2016-01-07	my_table:day_id=2016-01-08	my_table:day_id=2016-01-09	my_table:day_id=2016-01-10	my_table:day_id=2016-01-11	my_table:day_id=2016-01-13	my_table:day_id=2016-01-14	my_table:day_id=2016-01-15	my_table:day_id=2016-01-16	my_table:day_id=2016-01-17	my_table:day_id=2016-01-18	my_table:day_id=2016-01-19	my_table:day_id=2016-01-20	my_table:day_id=2016-01-21	my_table:day_id=2016-01-22	my_table:day_id=2016-01-23	my_table:day_id=2016-01-24	my_table:day_id=2016-01-25	my_table:day_id=2016-01-26	my_table:day_id=2016-01-27	my_table:day_id=2016-01-28	my_table:day_id=2016-01-29	my_table:day_id=2016-01-30	my_table:day_id=2016-01-31	my_table:day_id=2016-02-01	my_table:day_id=2016-02-03	my_table:day_id=2016-02-04	my_table:day_id=2016-02-05	my_table:day_id=2016-02-07	my_table:day_id=2016-02-08	my_table:day_id=2016-02-10	my_table:day_id=2016-02-11	my_table:day_id=2016-02-13	my_table:day_id=2016-02-14	my_table:day_id=2016-02-15	my_table:day_id=2016-02-16	my_table:day_id=2016-02-17	my_table:day_id=2016-02-19	my_table:day_id=2016-02-20	my_table:day_id=2016-02-22	my_table:day_id=2016-02-23	my_table:day_id=2016-02-24	my_table:day_id=2016-02-25	my_table:day_id=2016-02-26	my_table:day_id=2016-02-27	my_table:day_id=2016-02-28	my_table:day_id=2016-02-29	my_table:day_id=2016-03-02	my_table:day_id=2016-03-03	my_table:day_id=2016-03-04	my_table:day_id=2016-03-05	my_table:day_id=2016-03-06	my_table:day_id=2016-03-07	my_table:day_id=2016-03-08	my_table:day_id=2016-03-10	my_table:day_id=2016-03-11	my_table:day_id=2016-03-12	my_table:day_id=2016-03-13	my_table:day_id=2016-03-14	my_table:day_id=2016-03-15	my_table:day_id=2016-03-17	my_table:day_id=2016-03-18	my_table:day_id=2016-03-19	my_table:day_id=2016-03-21	my_table:day_id=2016-03-22	my_table:day_id=2016-03-25	my_table:day_id=2016-03-26	my_table:day_id=2016-03-27	my_table:day_id=2016-03-28	my_table:day_id=2016-03-29	my_table:day_id=2016-03-30	my_table:day_id=2016-03-31	my_table:day_id=2016-04-01	my_table:day_id=2016-04-03	my_table:day_id=2016-04-05	my_table:day_id=2016-04-07	my_table:day_id=2016-04-08	my_table:day_id=2016-04-09	my_table:day_id=2016-04-10	my_table:day_id=2016-04-13	my_table:day_id=2016-04-14	my_table:day_id=2016-04-15	my_table:day_id=2016-04-16	my_table:day_id=2016-04-17	my_table:day_id=2016-04-18	my_table:day_id=2016-04-19	my_table:day_id=2016-04-20	my_table:day_id=2016-04-21	my_table:day_id=2016-04-23	my_table:day_id=2016-04-24	my_table:day_id=2016-04-25	my_table:day_id=2016-04-26	my_table:day_id=2016-04-27	my_table:day_id=2016-04-28	my_table:day_id=2016-04-29	my_table:day_id=2016-04-30	my_table:day_id=2016-05-01	my_table:day_id=2016-05-02	my_table:day_id=2016-05-03	my_table:day_id=2016-05-05	my_table:day_id=2016-05-06	my_table:day_id=2016-05-08	my_table:day_id=2016-05-09	my_table:day_id=2016-05-10	my_table:day_id=2016-05-11	my_table:day_id=2016-05-12	my_table:day_id=2016-05-16	my_table:day_id=2016-05-18

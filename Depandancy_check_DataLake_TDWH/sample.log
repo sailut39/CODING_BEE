@@ -1,0 +1,5 @@
+DATA_LAKE Start Date: (None)
+TD_DW End Date:07-OCT-17
+Stage Table Count: 0
+Dates not matching for DATA_LAKE and TD_DW side,DATA_LAKE date is  (None) and TD_DW date is 07-OCT-17 !.
+Please make sure to have the DATA_LAKE job started after the TD_DW job is consumed for previous day.
