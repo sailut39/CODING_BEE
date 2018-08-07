@@ -13,6 +13,9 @@
 # How I am going to do this??
 #        Get Json DFs on top of 3 kind of files or messages
 #        Get existing target data and perform a join with DFs to pull out report to final system
+#Quick observation-
+#        This program should run on only spark2.0+ version, because JDBC Dataframe will get schema from RDMBS and it will not change even on cascaded dataframes, so not null
+#        will always a not null in entire program, it is a kind of bug in older versions of spark
 # Execution command-
 #/usr/hdp/2.6.2.0-205/spark2/bin/spark-submit --jars /home/stata2/jars/postgresql-42.2.2.jar \
 #--master <local/yarn/yarn-client> \
