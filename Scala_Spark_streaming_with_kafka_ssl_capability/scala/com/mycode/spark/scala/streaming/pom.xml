@@ -1,0 +1,186 @@
+<!-- 0.02 placing balnk value in place of null and added if condition to bypass empty datasets -->
+<!-- 0.03 try catch while copying data from dataframe to postgres -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+       <modelVersion>4.0.0</modelVersion>
+       <groupId>mycode-spark</groupId>
+       <artifactId>mycode_spark_streaming</artifactId>
+       <version>0.0.3</version>
+       <packaging>jar</packaging>
+       <name>mycode_spark_streaming</name>
+       <url>http://maven.apache.org</url>
+       <properties>
+             <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+       </properties>
+       <dependencies>
+             <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql -->
+             <dependency>
+    				<groupId>org.postgresql</groupId>
+    				<artifactId>postgresql</artifactId>
+    				<version>42.2.2</version>
+			 </dependency>
+             
+             <dependency>
+                    <groupId>org.apache.spark</groupId>
+                    <artifactId>spark-sql_2.11</artifactId>
+                    <version>2.2.1</version>
+             </dependency>
+             <dependency>
+                    <groupId>org.skife.com.typesafe.config</groupId>
+                    <artifactId>typesafe-config</artifactId>
+                    <version>0.3.0</version>
+             </dependency>
+             <dependency>
+                    <groupId>org.apache.spark</groupId>
+                    <artifactId>spark-hive_2.10</artifactId>
+                    <version>1.2.1</version>
+             </dependency>
+             <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
+             <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming -->
+             <dependency>
+                    <groupId>org.apache.spark</groupId>
+                    <artifactId>spark-streaming_2.11</artifactId>
+                    <version>2.3.0</version>
+             </dependency>
+             <!-- https://mvnrepository.com/artifact/com.typesafe.play/play-json -->
+             <!-- https://mvnrepository.com/artifact/com.typesafe.play/play -->
+             <!-- https://mvnrepository.com/artifact/com.typesafe.play/play -->
+             <dependency>
+                    <groupId>com.typesafe.play</groupId>
+                    <artifactId>play_2.11</artifactId>
+                    <version>2.6.13</version>
+             </dependency>
+             <!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
+             <dependency>
+                    <groupId>org.scala-lang</groupId>
+                    <artifactId>scala-library</artifactId>
+                    <version>2.11.1</version>
+             </dependency>
+             <dependency>
+                    <groupId>org.apache.spark</groupId>
+                    <artifactId>spark-streaming-kafka-0-10_2.11</artifactId>
+                    <version>2.3.1</version>
+             </dependency>
+             <dependency>
+                    <groupId>org.json4s</groupId>
+                    <artifactId>json4s-native_2.11</artifactId>
+                    <version>3.2.10</version>
+             </dependency>
+             <!-- Other managed dependencies (described below) -->
+             <dependency>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                    <version>3.8.1</version>
+                    <scope>test</scope>
+             </dependency>
+             <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk -->
+<dependency>
+    <groupId>com.amazonaws</groupId>
+    <artifactId>aws-java-sdk</artifactId>
+    <version>1.11.372</version>
+</dependency>
+             
+       </dependencies>
+       <build>
+<plugins>
+<!-- mixed scala/java compile -->
+<plugin>
+<groupId>org.scala-tools</groupId>
+<artifactId>maven-scala-plugin</artifactId>
+<executions>
+<execution>
+<id>compile</id>
+<goals>
+<goal>compile</goal>
+</goals>
+<phase>compile</phase>
+</execution>
+<execution>
+<id>test-compile</id>
+<goals>
+<goal>testCompile</goal>
+</goals>
+<phase>test-compile</phase>
+</execution>
+<execution>
+<phase>process-resources</phase>
+<goals>
+<goal>compile</goal>
+</goals>
+</execution>
+</executions>
+</plugin>
+<plugin>
+<artifactId>maven-compiler-plugin</artifactId>
+<configuration>
+<source>1.7</source>
+<target>1.7</target>
+</configuration>
+</plugin>
+<!-- for fatjar -->
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-assembly-plugin</artifactId>
+<version>2.4</version>
+<configuration>
+<descriptorRefs>
+<descriptorRef>jar-with-dependencies</descriptorRef>
+</descriptorRefs>
+</configuration>
+<executions>
+<execution>
+<id>assemble-all</id>
+<phase>package</phase>
+<goals>
+<goal>single</goal>
+</goals>
+</execution>
+</executions>
+</plugin>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-jar-plugin</artifactId>
+<configuration>
+<archive>
+<manifest>
+<addClasspath>true</addClasspath>
+<mainClass>fully.qualified.MainClass</mainClass>
+</manifest>
+</archive>
+</configuration>
+</plugin>
+</plugins>
+<pluginManagement>
+<plugins>
+<!--This plugin's configuration is used to store Eclipse m2e settings 
+only. It has no influence on the Maven build itself. -->
+<plugin>
+<groupId>org.eclipse.m2e</groupId>
+<artifactId>lifecycle-mapping</artifactId>
+<version>1.0.0</version>
+<configuration>
+<lifecycleMappingMetadata>
+<pluginExecutions>
+<pluginExecution>
+<pluginExecutionFilter>
+<groupId>org.scala-tools</groupId>
+<artifactId> maven-scala-plugin</artifactId>
+<versionRange> [2.15.2,)</versionRange>
+<goals>
+<goal>compile</goal>
+<goal>testCompile</goal>
+</goals>
+</pluginExecutionFilter>
+<action>
+<execute />
+</action>
+</pluginExecution>
+</pluginExecutions>
+</lifecycleMappingMetadata>
+</configuration>
+</plugin>
+</plugins>
+</pluginManagement>
+</build>
+</project>
