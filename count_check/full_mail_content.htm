@@ -1,0 +1,234 @@
+From: <email_address>
+To: <email_addresses>
+Subject: counts check on <server_nm> - <etl_server_date>
+Mime-Version: 1.0
+Content-Type: text/html
+
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="sample_data_files/filelist.xml">
+<link rel=Edit-Time-Data href="sample_data_files/editdata.mso">
+<!--
+<link rel=themeData href="sample_data_files/themedata.thmx">
+<link rel=colorSchemeMapping href="sample_data_files/colorschememapping.xml">
+
+<style>
+body {
+text-align: center;
+}
+#mainbox {
+display: block;
+width: 400px;
+margin: 20px auto;
+padding: 10px;
+text-align: center;
+background: #ddd;
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+border-radius: 20px;
+-moz-box-shadow: rgb(120,120,120) 10px 10px 10px;
+-webkit-box-shadow: rgb(120,120,120) 10px 10px 10px;
+box-shadow: rgb(120,120,120) 10px 10px 10px;
+background: -webkit-linear-gradient(top, #006699, #006699);
+background: -moz-linear-gradient(top, #006699, #006699);
+background: linear-gradient(top, #006699, #006699);
+}
+#title {
+font-size: 10px;
+text-shadow: rgb(120,120,120) 1px 1px 2px;
+}
+@font-face {
+font-family: 'MyNewFont';
+src: url('font.ttf');
+}
+tr:nth-child(odd) {
+    background: #ffeee6;
+}
+
+tr:nth-child(even) {
+    background: #e0e0eb;
+}
+#id2 {
+	background-color: #ffffcc;
+	display:block;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	text-shadow: 1px 1px 2px #999;
+	box-shadow: 1px 1px 2px #999;
+	opacity: 0.8;
+}
+</style>
+-->
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72" style='tab-interval:.5in'>
+
+<div id=title>
+
+<p ><span style='color:#44546A'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align: Left;' align='center'><strong><span style='color: black;'>Hive Vs DB count validations- counts check on <etl_server_name> - <etl_server_date> </span></strong></p>
+
+<table id="mainbox" style="width: 1277px; margin-left: 0.1pt; border-collapse: collapse; height: 36px;">
+<tbody>
+<tr style="height: 3px;">
+<td style="width: 259px; border-width: 1pt; border-style: solid; border-color: windowtext black windowtext windowtext; border-image: initial; background: #fe2ec8; height: 3px;" valign="bottom" nowrap="nowrap">
+<p style="text-align: center;" align="center"><strong><span style="color: black;">Table Name</span></strong></p>
+</td>
+<td style="border-width: 1pt; border-style: solid; border-color: windowtext black windowtext windowtext; border-image: initial; background: #fe2ec8; width: 233px; height: 3px;" valign="bottom" nowrap="nowrap">
+<p style="text-align: center;" align="center"><strong><span style="color: black;">Hive record count</span></strong></p>
+</td>
+<td style="width: 207px; border-top: 1pt solid windowtext; border-left: none; border-bottom: 1pt solid windowtext; border-right: 1pt solid black; background: #fe2ec8; height: 3px;" valign="bottom" nowrap="nowrap">
+<p style="text-align: center;" align="center"><strong><span style="color: black;">DB record count </span></strong></p>
+</td>
+
+<td style="width: 183.125px; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-image: initial; border-left: none; background: #fe2ec8; padding: 0in 5.4pt; height: 3px;" valign="bottom" nowrap="nowrap">
+<p><strong><span style="color: black;">count diff(DB-Hive)</span></strong></p>
+</td>
+<td style="width: 44.875px; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-image: initial; border-left: none; background: #fe2ec8; padding: 0in 5.4pt; height: 3px;" valign="bottom" nowrap="nowrap">
+<p><strong><span style="color: black;">Comments</span></strong></p>
+</td>
+</tr><tr style='height:15.0pt'>
+  
+  <td width=214 nowrap valign=bottom style='width:160.4pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p ><span class=SpellE><span style='color:black'><tbl1></span></span><span
+  style='color:black'></span></p>
+  </td>
+  <td width=59 nowrap valign=bottom style='width:37.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p  align=right style='text-align:right'><span
+  style='color:black'><count></span></p>
+  </td>
+  <td width=67 nowrap valign=bottom style='width:44.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p  align=right style='text-align:right'><span
+  style='color:black'><count></span></p>
+  </td>
+  <!--
+  <td width=67 nowrap valign=bottom style='width:44.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p  align=right style='text-align:right'><span
+  style='color:black'></span></p>
+  </td>
+  -->
+  
+  <td width=128 nowrap valign=bottom style='width:96.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p  align=right style='text-align:right'><span
+  style='color:black'><diff_val></span></p>
+  </td>
+  <td width=213 nowrap valign=bottom style='width:80.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p ><span style='color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+<tr style='height:15.0pt'>
+  
+  <td width=214 nowrap valign=bottom style='width:160.4pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p ><span class=SpellE><span style='color:black'><table2></span></span><span
+  style='color:black'></span></p>
+  </td>
+  <td width=59 nowrap valign=bottom style='width:37.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p  align=right style='text-align:right'><span
+  style='color:black'><count2></span></p>
+  </td>
+  <td width=67 nowrap valign=bottom style='width:44.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p  align=right style='text-align:right'><span
+  style='color:black'><count2></span></p>
+  </td>
+  <!--
+  <td width=67 nowrap valign=bottom style='width:44.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p  align=right style='text-align:right'><span
+  style='color:black'></span></p>
+  </td>
+  -->
+  
+  <td width=128 nowrap valign=bottom style='width:96.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p  align=right style='text-align:right'><span
+  style='color:black'><diff_val></span></p>
+  </td>
+  <td width=213 nowrap valign=bottom style='width:80.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p ><span style='color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table></div></body>
+
+<p style='text-align: Left;' align='center'><strong><span style='color: black;'>Hive freshness check-</span></strong></p>
+<table border='1' width='200px' style='border-collapse:collapse;'>
+
+<tr>
+<td style='width: 200px; background: #8CE4FC; height: 3px;border=1;style=border-collapse:collapse;width=200px;cellpadding=0;cellspacing=0' valign='bottom' nowrap='nowrap'>
+<p style='text-align: left;' align='center'><strong><span style='color: black;'>MAX_Partition_date </span></strong></p>
+</td>
+<td style='width: 200px; background: #8CE4FC; height: 3px;border=1;style=border-collapse:collapse;width=200px;cellpadding=0;cellspacing=0' valign='bottom' nowrap='nowrap'>
+<p style='text-align: left;' align='center'><strong><span style='color: black;'>Table_nm </span></strong></p>
+</td>
+</tr>
+
+<tr> <td style='width: 200px; background: #8CFCDD; height: 3px;border=1;style=border-collapse:collapse;width=200px;cellpadding=0;cellspacing=0' valign='bottom' wrap='soft'>
+<p style='text-align: left;' align='center'><part_val> </p></td>
+
+<td style='width: 200px; background: #8CFCDD; height: 3px;border=1;style=border-collapse:collapse;width=200px;cellpadding=0;cellspacing=0' valign='bottom' nowrap='nowrap'>
+<p style='text-align: left;' align='center'><tbl_nm> </p></td>
+</tr>
+
+<tr> <td style='width: 200px; background: #8CFCDD; height: 3px;border=1;style=border-collapse:collapse;width=200px;cellpadding=0;cellspacing=0' valign='bottom' wrap='soft'>
+<p style='text-align: left;' align='center'><part_val> </p></td>
+
+<td style='width: 200px; background: #8CFCDD; height: 3px;border=1;style=border-collapse:collapse;width=200px;cellpadding=0;cellspacing=0' valign='bottom' nowrap='nowrap'>
+<p style='text-align: left;' align='center'><tbl_nm2> </p></td>
+</tr>
+</table>
+
+<p style='text-align: Left;' align='center'><strong><span style='color: black;'>Today Error file counts from <part_val> -</span></strong></p>
+
+<p style='text-align: Left;' align='center'><strong><span style='color: Brown;'> 0 </p>
+
+<p style='text-align: Left;' align='center'><strong><span style='color: black;'>Today Error file counts from <part_val2> -</span></strong></p>
+
+<p style='text-align: Left;' align='center'><strong><span style='color: Brown;'> 0 </p>
+
+<p style='text-align: Left;' align='center'><strong><span style='color: black;'>Reprocess Log data - </span></strong></p>
+
+
+<table border='1' width='200px' style='border-collapse:collapse;'>
+
+<tr>
+<td style='width: 200px; background: #FF9933; height: 3px;border=1;style=border-collapse:collapse;width=200px;cellpadding=0;cellspacing=0' valign='bottom' nowrap='nowrap'>
+<p style='text-align: left;' align='center'><strong><span style='color: black;'>Messgae_name </span></strong></p>
+</td>
+<td style='width: 200px; background: #FF9933; height: 3px;border=1;style=border-collapse:collapse;width=200px;cellpadding=0;cellspacing=0' valign='bottom' nowrap='nowrap'>
+<p style='text-align: left;' align='center'><strong><span style='color: black;'>Count </span></strong></p>
+</td>
+</tr>
+ </table> 
+<p style='text-align: left;' align='left'>Note: counts are derived based on latest partition value at time of execution, usually same value will be used for DB export sake</p>
+<p style='text-align: center;' align='center'><strong><span style='color: red;'>For assistance please contact <team_name> team</span></strong></p> </html>
