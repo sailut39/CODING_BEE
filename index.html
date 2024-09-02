@@ -11,7 +11,6 @@
             color: #333;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
         .container {
             max-width: 800px;
@@ -20,9 +19,11 @@
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: auto;
         }
         h1 {
             color: #5a5a5a;
+            margin-top: 0;
         }
         a {
             text-decoration: none;
@@ -30,6 +31,17 @@
         }
         a:hover {
             text-decoration: underline;
+        }
+        .content {
+            margin-left: 180px; /* Ensures the text stays clear of the image */
+        }
+        img {
+            width: 150px;
+            height: 200px; /* Vertical oval shape */
+            border-radius: 20%; /* Can be adjusted for different roundness */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            float: left; /* Ensures the image stays on the left */
+            margin-right: 20px;
         }
         .project-section {
             text-align: left;
@@ -44,13 +56,6 @@
         }
         p {
             margin: 5px 0;
-        }
-        img {
-            width: 150px;
-            height: auto;
-            border-radius: 50%;
-            margin-top: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
