@@ -24,6 +24,7 @@
         h1 {
             color: #5a5a5a;
             margin-top: 0;
+            display: inline-block;
         }
         a {
             text-decoration: none;
@@ -33,14 +34,14 @@
             text-decoration: underline;
         }
         .content {
-            margin-left: 180px; /* Ensures the text stays clear of the image */
+            margin-left: 180px;
         }
         img {
             width: 150px;
-            height: 200px; /* Vertical oval shape */
-            border-radius: 20%; /* Can be adjusted for different roundness */
+            height: 200px;
+            border-radius: 20%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            float: left; /* Ensures the image stays on the left */
+            float: left;
             margin-right: 20px;
         }
         .project-section {
@@ -57,10 +58,22 @@
         p {
             margin: 5px 0;
         }
+        .github-icon {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: right;
+        }
+        .github-icon img {
+            width: 40px;
+            height: 40px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <a href="https://github.com/sailut39/CODING_BEE" target="_blank" class="github-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Icon">
+        </a>
         <img src="https://github.com/sailut39/CODING_BEE/raw/master/images/sails-new-profile-image.jpeg" alt="My Photo">
         <h1> <br> Welcome to CODING_BEE <br> </h1>
         <p> <br> Hello! Thank you for visiting my repository! <br> </p>
