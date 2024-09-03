@@ -67,6 +67,19 @@
             width: 40px;
             height: 40px;
         }
+         .download-image {
+            display: inline-block;
+            margin-top: 10px;
+            vertical-align: right;
+            transition: filter 0.3s ease;
+        }
+        .download-image img {
+            width: 30px;
+            height: 30px;
+        }
+        .download-image:hover {
+            filter: hue-rotate(180deg) brightness(1.5);
+        }
     </style>
 </head>
 <body>
@@ -131,7 +144,14 @@
         </div>
 
         <p>Feel free to explore the different folders and files to find various projects related to AI and machine learning.</p>
-        <p>You can view the html file directly by clicking on the link.</p>
+        <p>You can view the html file directly by clicking on the link. <br> </p>
+        <p> <strong> Resume: 
+        <a href="https://drive.google.com/uc?export=download&id=1QDLmVQzrl_KEC-BPQ9_lbdEC3wLCnVLH" download class="download-image">
+        <img src="https://img.icons8.com/?size=100&id=21339&format=png&color=000000" alt="Download">
+        </a>
+
+        </strong> </p>
+        <iframe src="https://docs.google.com/document/d/1rH12bXsq1IkdiUzB4jJuzJ0V6425-t8M/pub?embedded=true" width="800" height="600" frameborder="0"></iframe>
     </div>
 </body>
 </html>
